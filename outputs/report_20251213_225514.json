@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "report_type": "compliance_analysis",
+    "generated_at": "2025-12-13T22:55:14.308431",
+    "system_version": "1.0.0"
+  },
+  "decision": {
+    "decision": "NEEDS MORE DOCUMENTS",
+    "confidence": 0.5,
+    "reasons": [
+      "PAN card not found",
+      "Gemini verification failed, using local model",
+      "Price inconsistency detected"
+    ],
+    "summary": "Documents need attention: PAN card not found",
+    "analysis_source": "hybrid_local_gemini",
+    "recommendations": [
+      "Upload missing documents",
+      "Check expiry dates",
+      "Verify company name consistency"
+    ],
+    "missing_fields": [
+      "gst_number",
+      "pan_number",
+      "udyam_number",
+      "company_name",
+      "delivery_date",
+      "total_price",
+      "authorized_signatory"
+    ]
+  },
+  "validation_results": {
+    "signature": {
+      "status": "found",
+      "evidence": {
+        "found": true,
+        "page": 1,
+        "line": 1,
+        "snippet": "Authorized Signatory"
+      }
+    },
+    "quotation_date": {
+      "status": "found",
+      "evidence": {
+        "field": "date",
+        "value": "05/12/2025",
+        "page": 1,
+        "line": 3,
+        "snippet": "Quotation Date: 05/12/2025...",
+        "confidence": "medium"
+      }
+    },
+    "price_consistency": {
+      "consistent": true,
+      "message": "Only one price found"
+    },
+    "gst_number": {
+      "status": "missing",
+      "error": "gst_number not found"
+    },
+    "pan_number": {
+      "status": "missing",
+      "error": "pan_number not found"
+    },
+    "udyam_number": {
+      "status": "missing",
+      "error": "udyam_number not found"
+    },
+    "company_name": {
+      "status": "missing",
+      "error": "company_name not found"
+    },
+    "delivery_date": {
+      "status": "missing",
+      "error": "delivery_date not found"
+    },
+    "total_price": {
+      "status": "missing",
+      "error": "total_price not found"
+    },
+    "authorized_signatory": {
+      "status": "missing",
+      "error": "authorized_signatory not found"
+    }
+  },
+  "extracted_data": {
+    "gst_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "GST Registration Certificate",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Legal Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "GSTIN: 33ABCDE1234F1Z5",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "State: Tamil Nadu",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Registration Date: 15/03/2022",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Status: Active",
+        "type": "text"
+      }
+    ],
+    "pan_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Permanent Account Number (PAN)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "PAN Number: ABCDE1234F",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Issued By: Income Tax Department, Government of India",
+        "type": "text"
+      }
+    ],
+    "udyam_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Udyam Registration Certificate",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Enterprise Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Udyam Registration Number: UDYAM-TN-12-0012345",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Type of Enterprise: Micro",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Date of Registration: 20/04/2022",
+        "type": "text"
+      }
+    ],
+    "quotation_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Price Quotation Document",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Quotation Date: 05/12/2025",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Total Quoted Price: INR 4,50,000",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Delivery Schedule: Within 30 days from order date",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Validity: 60 days",
+        "type": "text"
+      }
+    ],
+    "quotation_date": "05/12/2025",
+    "prices": [
+      "INR 4,50"
+    ],
+    "signature_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Authorized Signatory",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Authorized Signatory Name: Kavin M",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Designation: Director",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Signature: (Signed Digitally)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Date: 05/12/2025",
+        "type": "text"
+      }
+    ],
+    "signature": "Present"
+  },
+  "statistics": {
+    "total_fields_checked": 10,
+    "valid_fields": 0,
+    "missing_fields": 7,
+    "compliance_score": 22.22
+  }
+}

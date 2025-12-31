@@ -1,0 +1,150 @@
+{
+  "feature_columns": [
+    "gst_present",
+    "pan_present",
+    "udyam_present",
+    "signature_present",
+    "quotation_present",
+    "gst_valid",
+    "pan_valid",
+    "udyam_valid",
+    "quotation_valid",
+    "gst_days_to_expiry",
+    "udyam_days_to_expiry",
+    "name_consistency",
+    "address_consistency",
+    "price_consistency",
+    "num_pages",
+    "has_signature",
+    "has_delivery_date",
+    "has_payment_terms",
+    "has_warranty",
+    "text_length",
+    "num_dates_found",
+    "num_prices_found",
+    "gst_validation_score",
+    "pan_validation_score",
+    "udyam_validation_score",
+    "completeness_score",
+    "consistency_score",
+    "validity_score"
+  ],
+  "feature_importance": [
+    {
+      "feature": "consistency_score",
+      "importance": 0.1585120517540596
+    },
+    {
+      "feature": "validity_score",
+      "importance": 0.1463890703192801
+    },
+    {
+      "feature": "completeness_score",
+      "importance": 0.11357979997778786
+    },
+    {
+      "feature": "udyam_validation_score",
+      "importance": 0.11065729107428147
+    },
+    {
+      "feature": "pan_validation_score",
+      "importance": 0.11055914940273423
+    },
+    {
+      "feature": "gst_validation_score",
+      "importance": 0.09822650744528534
+    },
+    {
+      "feature": "address_consistency",
+      "importance": 0.07243355986581361
+    },
+    {
+      "feature": "has_signature",
+      "importance": 0.062278398879704815
+    },
+    {
+      "feature": "udyam_days_to_expiry",
+      "importance": 0.03867275557408175
+    },
+    {
+      "feature": "gst_days_to_expiry",
+      "importance": 0.03513436018910266
+    },
+    {
+      "feature": "name_consistency",
+      "importance": 0.012609454136001341
+    },
+    {
+      "feature": "text_length",
+      "importance": 0.012178291958475439
+    },
+    {
+      "feature": "has_delivery_date",
+      "importance": 0.008685362210935691
+    },
+    {
+      "feature": "price_consistency",
+      "importance": 0.0071825223445605105
+    },
+    {
+      "feature": "has_payment_terms",
+      "importance": 0.006463565952328014
+    },
+    {
+      "feature": "signature_present",
+      "importance": 0.0021854760303495944
+    },
+    {
+      "feature": "gst_valid",
+      "importance": 0.001588420472150155
+    },
+    {
+      "feature": "num_dates_found",
+      "importance": 0.001365309216782884
+    },
+    {
+      "feature": "gst_present",
+      "importance": 0.0012736171724180437
+    },
+    {
+      "feature": "quotation_present",
+      "importance": 2.4914673033207168e-05
+    },
+    {
+      "feature": "num_pages",
+      "importance": 1.2135083290648038e-07
+    },
+    {
+      "feature": "num_prices_found",
+      "importance": 5.024700252195866e-16
+    },
+    {
+      "feature": "udyam_valid",
+      "importance": 1.246286317118486e-16
+    },
+    {
+      "feature": "has_warranty",
+      "importance": 7.979153599667895e-17
+    },
+    {
+      "feature": "udyam_present",
+      "importance": 5.0644827027166574e-17
+    },
+    {
+      "feature": "pan_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "quotation_valid",
+      "importance": 0.0
+    },
+    {
+      "feature": "pan_valid",
+      "importance": 0.0
+    }
+  ],
+  "training_date": "2025-12-17T16:00:06.278960",
+  "model_type": "RandomForestClassifier",
+  "accuracy": 1.0,
+  "num_samples": 2000
+}

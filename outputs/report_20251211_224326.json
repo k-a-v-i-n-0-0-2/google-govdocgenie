@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "report_type": "compliance_analysis",
+    "generated_at": "2025-12-11T22:43:26.549135",
+    "system_version": "1.0.0"
+  },
+  "decision": {
+    "decision": "NEEDS MORE DOCUMENTS",
+    "confidence": 0.5,
+    "reasons": [
+      "Name inconsistency detected",
+      "Gemini verification failed, using local model",
+      "PAN card not found"
+    ],
+    "summary": "Documents need attention: Name inconsistency detected",
+    "analysis_source": "hybrid_local_gemini",
+    "recommendations": [
+      "Upload missing documents",
+      "Check expiry dates",
+      "Verify company name consistency"
+    ],
+    "missing_fields": [
+      "gst_number",
+      "pan_number",
+      "udyam_number",
+      "company_name",
+      "delivery_date",
+      "total_price",
+      "authorized_signatory"
+    ]
+  },
+  "validation_results": {
+    "signature": {
+      "status": "found",
+      "evidence": {
+        "found": true,
+        "page": 1,
+        "line": 1,
+        "snippet": "Authorized Signatory Page"
+      }
+    },
+    "quotation_date": {
+      "status": "found",
+      "evidence": {
+        "field": "date",
+        "value": "05/12/2025",
+        "page": 1,
+        "line": 8,
+        "snippet": "Date of Issue: 05/12/2025...",
+        "confidence": "medium"
+      }
+    },
+    "price_consistency": {
+      "consistent": false,
+      "error": "Price mismatch detected. Difference: 20.00%",
+      "prices": [
+        125.0,
+        150.0
+      ]
+    },
+    "gst_number": {
+      "status": "missing",
+      "error": "gst_number not found"
+    },
+    "pan_number": {
+      "status": "missing",
+      "error": "pan_number not found"
+    },
+    "udyam_number": {
+      "status": "missing",
+      "error": "udyam_number not found"
+    },
+    "company_name": {
+      "status": "missing",
+      "error": "company_name not found"
+    },
+    "delivery_date": {
+      "status": "missing",
+      "error": "delivery_date not found"
+    },
+    "total_price": {
+      "status": "missing",
+      "error": "total_price not found"
+    },
+    "authorized_signatory": {
+      "status": "missing",
+      "error": "authorized_signatory not found"
+    }
+  },
+  "extracted_data": {
+    "gst_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "GST Certificate",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company Name: ABC Tech Solutions Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "GSTIN: 33ABCDE1234F1Z5",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Address: No. 12, Industrial Estate, Chennai, Tamil Nadu - 600032",
+        "type": "text"
+      }
+    ],
+    "pan_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "PAN Document",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "PAN:",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Note: (Intentional mistake: PAN missing for testing)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Issued Date: 12/05/2020",
+        "type": "text"
+      }
+    ],
+    "signature": "Present",
+    "udyam_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Udyam Registration Certificate",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Udyam No.: UDYAM-TN-12-1234567",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Company Name: HawkAI Innovations Private Limited",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Address: No. 21, Startup Alley, Chennai, Tamil Nadu - 600032",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Note: (Intentional mismatch: 'Private Limited' vs 'Pvt Ltd' to test fuzzy matching)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Issue Date: 01/01/2019",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 7,
+        "text": "Expiry Date: 01/01/2024",
+        "type": "text"
+      }
+    ],
+    "quotation_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Quotation Document",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Item: WiFi Router (Qty: 10)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Item: Network Switch 24-Port (Qty: 5)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "Total Price (page 1): INR 1,25,000",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Total Price (page 2): INR 1,50,000",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 7,
+        "text": "Delivery Date:",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 8,
+        "text": "Date of Issue: 05/12/2025",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 9,
+        "text": "Note: (Intentional mismatched prices across pages and missing delivery date)",
+        "type": "text"
+      }
+    ],
+    "quotation_date": "05/12/2025",
+    "prices": [
+      "INR 1,25",
+      "INR 1,50"
+    ],
+    "signature_text": [
+      {
+        "page": 1,
+        "line": 1,
+        "text": "Authorized Signatory Page",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 2,
+        "text": "Company Name: HawkAI Innovations Pvt Ltd",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 3,
+        "text": "Signed By: Mr. R. Kumar",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 4,
+        "text": "Designation: Managing Director",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 5,
+        "text": "(Signature Missing)",
+        "type": "text"
+      },
+      {
+        "page": 1,
+        "line": 6,
+        "text": "Note: (Intentional: signature image/stamp missing to test detection)",
+        "type": "text"
+      }
+    ]
+  },
+  "statistics": {
+    "total_fields_checked": 10,
+    "valid_fields": 0,
+    "missing_fields": 7,
+    "compliance_score": 22.22
+  }
+}

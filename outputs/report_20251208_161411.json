@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "report_type": "compliance_analysis",
+    "generated_at": "2025-12-08T16:14:11.769601",
+    "system_version": "1.0.0"
+  },
+  "decision": {
+    "decision": "REJECT",
+    "summary": "Multiple critical fields missing or invalid.",
+    "reasons": [
+      "Missing 9 required fields"
+    ],
+    "missing_fields": [
+      "signature",
+      "gst_number",
+      "pan_number",
+      "udyam_number",
+      "company_name",
+      "quotation_date",
+      "delivery_date",
+      "total_price",
+      "authorized_signatory"
+    ],
+    "recommendations": [
+      "Please upload all missing documents",
+      "Ensure all certificates are valid",
+      "Check name consistency across documents"
+    ]
+  },
+  "validation_results": {
+    "signature": {
+      "status": "missing",
+      "error": "Signature not found"
+    },
+    "gst_number": {
+      "status": "missing",
+      "error": "gst_number not found"
+    },
+    "pan_number": {
+      "status": "missing",
+      "error": "pan_number not found"
+    },
+    "udyam_number": {
+      "status": "missing",
+      "error": "udyam_number not found"
+    },
+    "company_name": {
+      "status": "missing",
+      "error": "company_name not found"
+    },
+    "quotation_date": {
+      "status": "missing",
+      "error": "quotation_date not found"
+    },
+    "delivery_date": {
+      "status": "missing",
+      "error": "delivery_date not found"
+    },
+    "total_price": {
+      "status": "missing",
+      "error": "total_price not found"
+    },
+    "authorized_signatory": {
+      "status": "missing",
+      "error": "authorized_signatory not found"
+    }
+  },
+  "extracted_data": {
+    "signature": "Present"
+  },
+  "statistics": {
+    "total_fields_checked": 9,
+    "valid_fields": 0,
+    "missing_fields": 9,
+    "compliance_score": 11.11
+  }
+}
